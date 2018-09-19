@@ -93,7 +93,8 @@ module.exports = (env) => {
 
   if (isProduction) {
     config.output = {
-      path: path.join(__dirname, 'dist'),
+      path: path.join(__dirname, './dist'),
+      publicPath: '/',
       chunkFilename: '[name].[chunkhash].bundle.js',
       filename: '[name].[chunkhash].bundle.js'
     }
